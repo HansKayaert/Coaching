@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+  # get 'coaching/answer'
+
+  # get 'coaching/ask'
+
+  get 'coaching/answer', to: 'coaching#answer'
+  get 'coaching/ask', to: 'coaching#ask'
+
+  # get 'coaching/:query', to: 'coaching#answer'
+
+  # get 'ask', to: 'coaching#ask'
+
+  # Generic syntax:
+  # verb 'path', to: 'controller#action' (action is an instance method)
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
